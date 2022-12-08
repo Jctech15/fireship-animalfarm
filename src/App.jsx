@@ -11,7 +11,7 @@ function useAnimalSearch() {
 
   const search = async (q) => {
     const response = await fetch(
-      "http://localhost:8080?" + new URLSearchParams({ q })
+      "http://localhost:8080/animals?" + new URLSearchParams({ q })
     );
 
     const data = await response.json();
